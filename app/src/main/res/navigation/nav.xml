@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeFragment4">
+    <fragment
+        android:id="@+id/homeFragment4"
+        android:name="com.example.flipkartadmin.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment4_to_categoryFragment2"
+            app:destination="@id/categoryFragment2" />
+        <action
+            android:id="@+id/action_homeFragment4_to_sliderFragment4"
+            app:destination="@id/sliderFragment4" />
+        <action
+            android:id="@+id/action_homeFragment4_to_productFragment3"
+            app:destination="@id/productFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment2"
+        android:name="com.example.flipkartadmin.Fragments.CategoryFragment"
+        android:label="fragment_category"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/sliderFragment4"
+        android:name="com.example.flipkartadmin.Fragments.SliderFragment"
+        android:label="fragment_slider"
+        tools:layout="@layout/fragment_slider" />
+    <fragment
+        android:id="@+id/addProductFragment3"
+        android:name="com.example.flipkartadmin.Fragments.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" />
+    <fragment
+        android:id="@+id/productFragment3"
+        android:name="com.example.flipkartadmin.Fragments.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment3_to_addProductFragment3"
+            app:destination="@id/addProductFragment3" />
+    </fragment>
+</navigation>
